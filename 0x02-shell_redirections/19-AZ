@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "YourInputHere" | tr 'Ac' 'Ze'
+cat input.txt | sed 's/A/Z/g; s/c/e/g'
