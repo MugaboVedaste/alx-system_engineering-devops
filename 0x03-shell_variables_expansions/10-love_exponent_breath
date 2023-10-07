@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$(bc -l <<< "${BREATH:-0} ^ ${LOVE:-1}")"
+awk "BEGIN { printf \"%.2f\\n\", (${BREATH:-0} ^ ${LOVE:-1}) }"
