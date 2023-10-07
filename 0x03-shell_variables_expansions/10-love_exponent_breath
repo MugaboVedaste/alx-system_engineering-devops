@@ -1,2 +1,2 @@
 #!/bin/bash
-awk "BEGIN { printf \"%.2f\\n\", (${BREATH:-0} ^ ${LOVE:-1}) }"
+echo $((${BREATH:-0} ** ${LOVE:-1}))
