@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((WATER + STIR)) bestchol
+echo "$WATER$STIR" | tr -d '[:space:]' | rev | tr 't' 'b' | tr 'e' 'c' | tr 'w' 'h' | tr 'i' 'o' | tr 'r' 'l' | tr '.' 't' | rev
